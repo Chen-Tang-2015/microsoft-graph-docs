@@ -43,6 +43,7 @@ IF NOT DEFINED APIDOCS_PATH (
 :: ----------
 
 echo start to transfer md to html and copy to GraphDocuments folder
+mkdir %ARTIFACTS%\wwwroot\newdir
 
 call :ExecuteCmd %APIDOCS_PATH% publish --format mustache --path %DEPLOYMENT_SOURCE% --output %DEPLOYMENT_TARGET% --template %DEPLOYMENT_TEMPLATE%
 
