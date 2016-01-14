@@ -1,3 +1,4 @@
+
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
 
 :: ----------------------
@@ -21,6 +22,8 @@ IF %ERRORLEVEL% NEQ 0 (
 setlocal enabledelayedexpansion
 
 SET ARTIFACTS=%~dp0%..\artifacts
+
+ mkdir %ARTIFACTS%\wwwroot\newdir
 
 IF NOT DEFINED DEPLOYMENT_SOURCE (
   SET DEPLOYMENT_SOURCE=%~dp0%.
