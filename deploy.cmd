@@ -19,8 +19,7 @@ SET APIDOCS_PATH=%SITE%\wwwroot\MD\apidocs
 
 echo start to transfer md to html and copy to GraphDocuments folder
 
-cd %SITE%\wwwroot\MD\apidocs
-apidocs.exe publish --format mustache --path %DEPLOYMENT_SOURCE% --output %DEPLOYMENT_TARGET% --template %DEPLOYMENT_TEMPLATE%
+%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE% --output %DEPLOYMENT_TARGET% --template %DEPLOYMENT_TEMPLATE% --format mustache
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
