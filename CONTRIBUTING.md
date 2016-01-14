@@ -1,6 +1,6 @@
-# Contribute to Microsoft Graph documentation
+﻿# Contribute to Microsoft Graph documentation
 
-Thank you for your interest in Microsoft Graph documentation!
+Thank you for your interest in Microsoft Graph documentation! hello
 
 * [Ways to contribute](#ways-to-contribute)
 * [Before we can accept your pull request](#before-we-can-accept-your-pull-request)
