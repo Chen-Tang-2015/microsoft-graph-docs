@@ -35,7 +35,7 @@ IF NOT DEFINED DEPLOYMENT_TEMPLATE (
 )
 
 IF NOT DEFINED MSBUILD_PATH (
-  SET MSBUILD_PATH=%ARTIFACTS%\wwwroot\MD\apidocs\apidocs.exe
+  SET APIDOCS_PATH=%ARTIFACTS%\wwwroot\MD\apidocs\apidocs.exe
 )
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -44,9 +44,7 @@ IF NOT DEFINED MSBUILD_PATH (
 
 echo Handling md file to html file publish.
 
-call :ExecuteCmd "%MSBUILD_PATH%" publish --format mustache --path "%DEPLOYMENT_SOURCE%" --output "%DEPLOYMENT_TARGET%" --template "%DEPLOYMENT_TEMPLATE%"
-xcopy %DEPLOYMENT_TEMPLATE% %DEPLOYMENT_TARGET% /Y
-
+call :ExecuteCmd %APIDOCS_PATH% publish --format mustache --path %DEPLOYMENT_SOURCE% --output %DEPLOYMENT_TARGET% --template %DEPLOYMENT_TEMPLATE%
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
