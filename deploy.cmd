@@ -42,7 +42,7 @@ IF NOT DEFINED APIDOCS_PATH (
 :: Deployment
 :: ----------
 
-echo Handling md file to html file publish.
+echo start to transfer md to html and copy to GraphDocuments folder
 
 call :ExecuteCmd %APIDOCS_PATH% publish --format mustache --path %DEPLOYMENT_SOURCE% --output %DEPLOYMENT_TARGET% --template %DEPLOYMENT_TEMPLATE%
 
