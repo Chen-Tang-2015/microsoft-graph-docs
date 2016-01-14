@@ -34,7 +34,7 @@ IF NOT DEFINED DEPLOYMENT_TEMPLATE (
   SET DEPLOYMENT_TARGET=%ARTIFACTS%\wwwroot\MD\office-content-pr\rest-api\Microsoft.Graph\html-template
 )
 
-IF NOT DEFINED MSBUILD_PATH (
+IF NOT DEFINED APIDOCS_PATH (
   SET APIDOCS_PATH=%ARTIFACTS%\wwwroot\MD\apidocs\apidocs.exe
 )
 
