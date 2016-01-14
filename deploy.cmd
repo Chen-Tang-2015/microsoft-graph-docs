@@ -45,6 +45,7 @@ IF NOT DEFINED MSBUILD_PATH (
 echo Handling md file to html file publish.
 
 call :ExecuteCmd "%MSBUILD_PATH%" publish --format mustache --path "%DEPLOYMENT_SOURCE%" --output "%DEPLOYMENT_TARGET%" --template "%DEPLOYMENT_TEMPLATE%"
+xcopy %DEPLOYMENT_TEMPLATE% %DEPLOYMENT_TARGET% /Y
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
