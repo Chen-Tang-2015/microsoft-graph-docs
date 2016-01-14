@@ -27,7 +27,11 @@ IF NOT DEFINED DEPLOYMENT_SOURCE (
 )
 
 IF NOT DEFINED DEPLOYMENT_TARGET (
-  SET DEPLOYMENT_TARGET=%ARTIFACTS%\wwwroot\GraphDocuments
+  SET DEPLOYMENT_TARGET=%ARTIFACTS%\wwwroot\GraphDocument
+)
+
+IF NOT DEFINED DEPLOYMENT_F (
+  SET DEPLOYMENT_TARGET=%ARTIFACTS%\wwwroot\MD
 )
 
 IF NOT DEFINED DEPLOYMENT_TEMPLATE (
@@ -44,7 +48,7 @@ IF NOT DEFINED MSBUILD_PATH (
 
 echo Handling md file to html file publish.
 
-call :ExecuteCmd "%MSBUILD_PATH%" publish --format mustache --path "%DEPLOYMENT_SOURCE%" --output "%DEPLOYMENT_TARGET%" --template "%DEPLOYMENT_TEMPLATE%"
+xcopy "%DEPLOYMENT_F%" "%DEPLOYMENT_TARGET%" /Y
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
