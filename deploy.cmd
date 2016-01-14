@@ -63,6 +63,7 @@ IF NOT DEFINED MSBUILD_PATH (
 
 IF NOT DEFINED DEPLOYMENT_F (
   SET DEPLOYMENT_TARGET=%ARTIFACTS%\wwwroot\MD
+   mkdir "%ARTIFACTS%"\wwwroot\newdir 
 )
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
