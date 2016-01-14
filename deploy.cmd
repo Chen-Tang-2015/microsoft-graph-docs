@@ -7,7 +7,7 @@ SET SITE=%~dp0%..
 
 SET DEPLOYMENT_SOURCE=%~dp0%..\repository
 
-SET DEPLOYMENT_TARGET=%SITE%\wwwroot\GraphDocuments
+SET DEPLOYMENT_TARGET=%SITE%\wwwroot\GraphDocument
 
 SET DEPLOYMENT_TEMPLATE=%SITE%\wwwroot\MD\office-content-pr\rest-api\Microsoft.Graph\html-template
 
