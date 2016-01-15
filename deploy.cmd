@@ -19,7 +19,7 @@ SET APIDOCS_PATH=%SITE%\wwwroot\MD\apidocs
 
 echo start to transfer md to html and copy to GraphDocuments folder
 
-mkdir %SITE%\newdir
+rd %SITE%\newdir
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
