@@ -25,5 +25,5 @@ IF NOT DEFINED APIDOCS_PATH (
 
 %APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE% --output %DEPLOYMENT_TARGET% --template %DEPLOYMENT_TEMPLATE% --format mustache
 
-DEL /F %SITE%\GraphStyles\*
-MOVE /Y  %DEPOYMENT_TARGET%\*.css  %SITE%\GraphStyles
+DEL %SITE%\GraphStyles\* /F 
+MOVE %DEPOYMENT_TARGET%\*.css  %SITE%\GraphStyles /Y 
