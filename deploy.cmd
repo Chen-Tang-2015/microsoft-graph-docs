@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 
 SET SITE=%~dp0%..
 
-SET DEPLOYMENT_SOURCE=%~dp0%..\repository
+SET DEPLOYMENT_SOURCE=%SITE%\repository
 
 SET DEPLOYMENT_TARGET=%SITE%\wwwroot\GraphDocument
 
