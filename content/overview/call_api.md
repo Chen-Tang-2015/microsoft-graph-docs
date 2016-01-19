@@ -9,7 +9,7 @@ To access and manipulate a Microsoft Graph API resource, you call and specify th
 - PUT
 - DELETE 
 
-All Microsoft Graph API requests use the following basic URL pattern:
+All Microsoft Graph API requests use the following basic URL pattern: test
 
 ```
 	https://graph.microsoft.com/{version}/{resource}?[odata_query_parameters]
